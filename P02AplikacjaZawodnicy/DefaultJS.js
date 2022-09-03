@@ -41,9 +41,11 @@ function pokazSzczegoly(id) {
             // alert("Data Saved: " + msg);
             $(".col-md-12").html(msg);
 
-            $("#btnZapisz").click(function () {
+            $("#btnZapisz").click(function (e) {
+                e.preventDefault();
+
                 var imie = $("#txtImie").val();
-                var nazwisko = $("#txtImie").val();
+                var nazwisko = $("#txtNazwisko").val();
                 var kraj = $("#txtKraj").val();
                 var miasto = $("#txtMiasto").val();
                 var waga = $("#txtWaga").val();
@@ -51,6 +53,7 @@ function pokazSzczegoly(id) {
                 var dataUr = $("#txtDataUr").val();
 
                 data = {
+                    id: id,
                     imie: imie,
                     nazwisko: nazwisko,
                     kraj: kraj,
@@ -72,6 +75,7 @@ function zapiszZawodnika(data) {
         data: data
     })
         .done(function (msg) {
-            alert("Data Saved: " + msg);
+            // alert("Data Saved: " + msg);
+            wyslijNaSerwer();
         });
 }
