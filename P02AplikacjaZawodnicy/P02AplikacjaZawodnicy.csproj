@@ -94,6 +94,7 @@
     <Content Include="assets\js\plugins\perfect-scrollbar.jquery.min.js" />
     <Content Include="Default.aspx" />
     <Content Include="DefaultJS.js" />
+    <Content Include="EdycjaZawodnika.aspx" />
     <Content Include="Web.config" />
     <Content Include="ZawodnicyAPI.aspx" />
   </ItemGroup>
@@ -104,6 +105,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EdycjaZawodnika.aspx.cs">
+      <DependentUpon>EdycjaZawodnika.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EdycjaZawodnika.aspx.designer.cs">
+      <DependentUpon>EdycjaZawodnika.aspx</DependentUpon>
     </Compile>
     <Compile Include="ModelBazyDanych.designer.cs">
       <AutoGen>True</AutoGen>
