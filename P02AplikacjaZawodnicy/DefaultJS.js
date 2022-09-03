@@ -65,6 +65,12 @@ function pokazSzczegoly(id) {
 
                 zapiszZawodnika(data);
             });
+
+            $("#btnUsun").click(function (e) {
+                debugger;
+                e.preventDefault();
+                usunZawodnika(id);
+            });
         });
 }
 
@@ -73,6 +79,18 @@ function zapiszZawodnika(data) {
         method: "POST",
         url: "ZapiszZawodnikaAPI.aspx",
         data: data
+    })
+        .done(function (msg) {
+            // alert("Data Saved: " + msg);
+            wyslijNaSerwer();
+        });
+}
+
+function usunZawodnika(id) {
+    $.ajax({
+        method: "POST",
+        url: "UsunZawodnikaAPI.aspx",
+        data: { id: id }
     })
         .done(function (msg) {
             // alert("Data Saved: " + msg);

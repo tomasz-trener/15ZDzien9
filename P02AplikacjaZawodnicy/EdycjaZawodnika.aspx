@@ -78,6 +78,7 @@
                   </div>
 
                     <button id="btnZapisz" class="btn btn-primary btn-block">Zapisz</button>
+                    <button id="btnUsun" class="btn btn-primary btn-block">Usuń</button>
                    <%-- <asp:Button ID="btnZapisz" OnClick="btnZapisz_Click" CssClass="btn btn-primary btn-block" runat="server" Text="Zapisz" />
                     <asp:Button ID="btnUsun" Visible="false" OnClick="btnUsun_Click" CssClass="btn btn-primary btn-block" runat="server" Text="Usuń" />--%>
 
