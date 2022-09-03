@@ -17,8 +17,10 @@ namespace P02AplikacjaZawodnicy
         {
             Thread.Sleep(2000);
 
+            string filtr = Request["filtr"] ?? ""; // jezeli filtr jest null to ustaw na ""
+
             ZawodnicyRepository zr = new ZawodnicyRepository();
-            Zawodnicy = zr.WczytajZawodnikow("", "");
+            Zawodnicy = zr.WczytajZawodnikow(filtr, "");
         }
     }
 }
