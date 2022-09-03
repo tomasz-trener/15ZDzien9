@@ -19,7 +19,8 @@ function wyslijNaSerwer() {
             $(".col-md-12").html(msg);
 
             $("tr").click(function () {
-                pokazSzczegoly();
+                var id = $(this).data('id');
+                pokazSzczegoly(id);
             });
         });
 }
@@ -29,12 +30,12 @@ function pokazLadowanie() {
     $(".col-md-12").html(obrazek);
 }
 
-function pokazSzczegoly() {
+function pokazSzczegoly(id) {
     pokazLadowanie();
     $.ajax({
         method: "POST",
         url: "EdycjaZawodnika.aspx",
-        // data: { filtr: filtr }
+        data: { id: id }
     })
         .done(function (msg) {
             // alert("Data Saved: " + msg);

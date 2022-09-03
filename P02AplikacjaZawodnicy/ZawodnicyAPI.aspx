@@ -27,7 +27,7 @@
                             foreach (var z in Zawodnicy)
                             { %>
 
-                            <tr>
+                            <tr data-id="<%= z.Id_zawodnika %>">
                                 <td><%= z.Imie + " " + z.Nazwisko %></td>
                                 <td><%= z.Kraj %></td>
                                 <td><%= z.Miasto %></td>
