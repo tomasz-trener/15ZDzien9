@@ -18,7 +18,7 @@ namespace P02AplikacjaZawodnicy
             int id;
 
             if (!int.TryParse(idString, out id))
-                Response.Redirect("Default.aspx");
+                Response.Redirect("Error.aspx");
             else if (id > 0)
             {
                 ZawodnicyRepository zr = new ZawodnicyRepository();

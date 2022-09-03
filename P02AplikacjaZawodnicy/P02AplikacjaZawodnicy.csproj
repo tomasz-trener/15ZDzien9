@@ -95,7 +95,9 @@
     <Content Include="Default.aspx" />
     <Content Include="DefaultJS.js" />
     <Content Include="EdycjaZawodnika.aspx" />
+    <Content Include="Error.aspx" />
     <Content Include="Web.config" />
+    <Content Include="ZapiszZawodnikaAPI.aspx" />
     <Content Include="ZawodnicyAPI.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -113,12 +115,26 @@
     <Compile Include="EdycjaZawodnika.aspx.designer.cs">
       <DependentUpon>EdycjaZawodnika.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ModelBazyDanych.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ModelBazyDanych.dbml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ZapiszZawodnikaAPI.aspx.cs">
+      <DependentUpon>ZapiszZawodnikaAPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ZapiszZawodnikaAPI.aspx.designer.cs">
+      <DependentUpon>ZapiszZawodnikaAPI.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ZawodnicyAPI.aspx.cs">
       <DependentUpon>ZawodnicyAPI.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
